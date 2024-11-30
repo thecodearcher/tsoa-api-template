@@ -1,6 +1,6 @@
-import { app } from "./app";
-import { NODE_ENV, PORT } from "./config";
-import logger from "./utils/logger";
+import { app } from './app';
+import { NODE_ENV, PORT } from './config';
+import logger from './utils/logger';
 
 const port = PORT;
 

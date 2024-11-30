@@ -1,4 +1,4 @@
-import { Controller as TsoaController } from "tsoa";
+import { Controller as TsoaController } from 'tsoa';
 
 export interface ApiResponse<T> {
   message: string;
@@ -6,11 +6,7 @@ export interface ApiResponse<T> {
 }
 
 export abstract class Controller extends TsoaController {
-  async response<T>(
-    data: T,
-    statusCode: number = 200,
-    message: string = "OK"
-  ): Promise<ApiResponse<T>> {
+  async response<T>(data: T, statusCode: number = 200, message: string = 'OK'): Promise<ApiResponse<T>> {
     if (data instanceof Promise) {
       data = await data;
     }
@@ -18,7 +14,7 @@ export abstract class Controller extends TsoaController {
     this.setStatus(statusCode);
     return {
       message,
-      data,
+      data
     };
   }
 }

@@ -1,13 +1,13 @@
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express';
 
 const trimStringProperties = (obj: any) => {
-  if (obj !== null && typeof obj === "object") {
+  if (obj !== null && typeof obj === 'object') {
     for (const prop in obj) {
-      if (typeof obj[prop] === "object") {
+      if (typeof obj[prop] === 'object') {
         return trimStringProperties(obj[prop]);
       }
       // if it's a string remove begin and end whitespaces
-      if (typeof obj[prop] === "string") {
+      if (typeof obj[prop] === 'string') {
         obj[prop] = obj[prop].trim();
       }
     }

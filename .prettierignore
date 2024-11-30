@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+coverage
+logs
+node_modules
+*.log
+*.env
+*.json
+*.md
+*.yml
+*.yaml
