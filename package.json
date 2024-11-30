@@ -1,5 +1,5 @@
 {
-  "name": "yapai",
+  "name": "tsoa-api-template",
   "version": "1.0.0",
   "main": "build/src/server.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "tsoa -c tsoaConfig.json spec-and-routes && tsc && tsc-alias",
     "start": "node build/src/server.js"
   },
-  "repository": "git@github.com:thecodearcher/yapai.git",
+  "repository": "git@github.com:thecodearcher/tsoa-api-template.git",
   "author": "Brian Iyoha <brian.iyoha@gmail.com>",
   "license": "MIT",
   "dependencies": {
