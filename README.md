@@ -45,3 +45,9 @@ A robust TypeScript-based API template with built-in error handling, logging, an
 
 Once the server is running, access the Swagger documentation at:
 - http://localhost:3000/docs
+
+## TODO 
+#### Read as "Things I'll do when I am not lazy 🥲"
+
+- Add Prisma ORM for database access
+- Add Docker support??
